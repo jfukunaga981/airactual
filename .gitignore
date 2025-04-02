@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Ignore all node_modules
+node_modules/
+
+# Include specific dependencies
+!node_modules/gsap
+!node_modules/lil-gui
+!node_modules/nuxt
+!node_modules/three
+!node_modules/vue
+!node_modules/vue-router
+
+# Ignore devDependencies but allow specific ones if necessary
+node_modules/autoprefixer
+node_modules/postcss
+node_modules/tailwindcss
+node_modules/vite-plugin-glsl
+node_modules/vite-plugin-string
+
+# Build output
+.nuxt/
+dist/
+output/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+*.ini
+
+# Tailwind generated files
+.tailwind/
+
+# Miscellaneous
+*.bak
+*.old
+*.orig

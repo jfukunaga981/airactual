@@ -1,0 +1,207 @@
+/* Commented out the Google Fonts import since we're using self-hosted Mona Sans */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Lato&display=swap'); */
+
+/* Self-hosted Mona Sans */
+
+/* Mona Sans Regular */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('~/assets/fonts/MonaSans-Regular.woff2') format('woff2'),
+       url('~/assets/fonts/MonaSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Mona Sans Bold */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('~/assets/fonts/MonaSans-Bold.woff2') format('woff2'),
+       url('~/assets/fonts/MonaSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Set Mona Sans as the default site font */
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Mona Sans', sans-serif;
+}
+
+/* New utility class for Mona Sans (if needed for specific overrides) */
+.font-mona {
+  font-family: 'Mona Sans', sans-serif;
+}
+
+/* Global Heading Styles using Tailwind's @apply */
+
+/* h1: Largest heading style */
+h1 {
+  @apply text-5xl font-mona font-bold text-white mb-6;
+}
+
+/* h2: Second-level heading with medium (500) weight */
+h2 {
+  @apply text-4xl font-mona font-bold text-white mb-4;
+}
+
+/* h3: Third-level heading with normal (400) weight */
+h3 {
+  @apply text-2xl font-mona font-bold text-white mb-4;
+}
+
+/* h4: Fourth-level heading with normal (400) weight */
+h4 {
+  @apply text-2xl font-mona font-normal text-white mb-2;
+}
+
+/* h5: Fifth-level heading with normal (400) weight */
+h5 {
+  @apply text-xl font-mona font-normal text-white mb-2;
+}
+
+/* h6: Sixth-level heading with normal (400) weight */
+h6 {
+  @apply text-lg font-mona font-normal text-white;
+}
+
+/* Global paragraph styling */
+p {
+  @apply text-lg text-gray-200 leading-relaxed;
+}
+
+.header-container {
+  @apply max-w-[850px] mx-auto text-center mb-16;
+}
+
+.content-section {
+  @apply bg-black bg-opacity-0 p-[15px] rounded-lg max-w-5xl w-full mx-4;
+}
+
+.section-heading {
+  @apply text-4xl font-mona mb-8 italic text-white text-shadow-[0_4px_8px_rgba(0,0,0,0.5)];
+}
+
+.gp-section {
+  @apply relative py-32 bg-black bg-opacity-100;
+}
+
+.feature-section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.feature-section-inner {
+  @apply bg-gray-800 bg-opacity-90 py-[50px] px-[15px] md:py-[50px] md:px-[40px] rounded-lg;
+}
+
+.feature-card {
+  @apply flex flex-col justify-center p-6 rounded-lg bg-black bg-opacity-50;
+}
+
+/* header two column section */
+
+.header-fullwidth-container {
+  @apply w-full bg-black bg-opacity-50 mb-20;
+}
+
+.header-section {
+  @apply max-w-5xl mx-auto bg-black bg-opacity-0 p-8 rounded-lg w-full mb-0;
+}
+
+.header-section-inner {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+}
+
+.header-section-left {
+  @apply flex flex-col justify-center p-6;
+}
+
+.header-section-right {
+  @apply flex items-center justify-center pointer-events-auto;
+}
+
+.header-section-heading {
+  @apply text-4xl font-mona mb-4 italic text-white;
+}
+
+/* Update header-button to use Mona Sans */
+.header-button {
+  @apply text-white bg-gnomon-blue inline-block px-8 py-4 rounded-full font-mona hover:bg-blue-700 transition;
+}
+
+/* repeatable two column section */
+
+.repeatable-section {
+  @apply rounded-3xl bg-black bg-opacity-50 mb-10 border border-solid border-gray-500;
+}
+
+.repeatable-section-inner {
+  @apply max-w-screen-xl mx-auto py-[50px] px-[15px] md:py-[50px] md:px-[40px] grid md:grid-cols-2 gap-8;
+}
+
+.two-columns-left {
+  @apply flex flex-col justify-center px-0;
+}
+
+.two-columns-right {
+  @apply flex flex-col justify-center items-center px-0;
+}
+
+.column-heading {
+  @apply text-2xl font-semibold mb-3 text-white;
+}
+
+.column-paragraph {
+  @apply text-gray-200;
+}
+
+.landscape-image {
+  @apply w-full h-auto rounded-lg;
+}
+
+.portrait-image {
+  @apply w-full max-w-[500px] h-auto rounded-lg;
+}
+
+/* main header single column layout */
+
+.section-header {
+  @apply text-center mb-12 max-w-2xl mx-auto;
+}
+
+.one-column-section-inner {
+  @apply flex flex-col items-center justify-center text-center py-[50px] px-[15px] md:py-[50px] md:px-[40px] max-w-[850px] mx-auto;
+}
+
+.section-paragraph {
+  @apply text-gray-200;
+}
+
+/* right column with single YouTube video */
+.column-video {
+  @apply flex items-center justify-center pointer-events-auto;
+}
+
+/* right column with media stacked */
+.media-stacked-column {
+  @apply flex flex-col items-center justify-center pointer-events-auto space-y-5;
+}
+
+/* iframe video */
+.iframe-video {
+  @apply w-full h-64 md:h-80 lg:h-96 rounded-lg;
+}
+
+/* sketchfab stacked */
+.sketchfab-embed {
+  @apply w-full h-[260px] rounded-lg shadow-lg;
+}
+
+/* one column section */
+.repeatable-section-inner-one-column {
+  @apply max-w-screen-xl mx-auto py-[50px] px-[30px] md:py-[50px] md:px-[40px] flex flex-col gap-8;
+}
+
+.one-column {
+  @apply flex flex-col justify-center px-0;
+}
