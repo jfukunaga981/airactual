@@ -205,3 +205,18 @@ p {
 .one-column {
   @apply flex flex-col justify-center px-0;
 }
+
+/* Global modal image defaults (mobile) */
+.global-modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+}
+
+/* Desktop breakpoint (>=640px) */
+@media (min-width: 640px) {
+  .global-modal-image {
+    max-width: 60vw;
+    max-height: 60vh;
+  }
+}

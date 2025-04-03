@@ -24,11 +24,17 @@
         </button>
         <!-- High Resolution Image -->
         <!-- Instead of fixed Tailwind classes for sizing, we use dynamic styles bound to modalWidth and modalHeight props -->
-        <img
+        <!-- <img
           :src="highResSrc"
           :alt="alt"
           class="block"
           :style="{ maxWidth: modalWidth, maxHeight: modalHeight }"
+        /> -->
+        <!-- High Resolution Image using our GLOBAL class -->
+        <img
+          :src="highResSrc"
+          :alt="alt"
+          class="global-modal-image block"
         />
       </div>
     </div>
@@ -53,15 +59,15 @@ const props = defineProps({
     default: 'Image'
   },
   // New prop: modalWidth allows you to set the maximum width of the modal image (default: 90vw)
-  modalWidth: {
-    type: String,
-    default: '800px'
-  },
+  // modalWidth: {
+  //   type: String,
+  //   default: '90vw'
+  // },
   // New prop: modalHeight allows you to set the maximum height of the modal image (default: 90vh)
-  modalHeight: {
-    type: String,
-    default: '800px'
-  }
+  // modalHeight: {
+  //   type: String,
+  //   default: '90vh'
+  // }
 })
 
 // Control the visibility of the modal
@@ -119,8 +125,8 @@ const closeModal = () => {
 }
 
 .modal-image {
-  max-width: 90vw;
-  max-height: 90vh;
+  /* max-width: 90vw;
+  max-height: 90vh; */
   display: block;
 }
 </style>
