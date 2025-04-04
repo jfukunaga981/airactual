@@ -104,8 +104,15 @@ p {
   @apply w-full bg-black bg-opacity-50 mb-20;
 }
 
+/* 
+  Responsive padding:
+  - py-4: vertical padding for mobile
+  - sm:py-6, md:py-8: increases vertical padding on larger screens
+  - px-4: horizontal padding for mobile
+  - sm:px-6, md:px-8: increases horizontal padding on larger screens
+*/
 .header-section {
-  @apply max-w-5xl mx-auto bg-black bg-opacity-0 p-8 rounded-lg w-full mb-0;
+  @apply max-w-5xl mx-auto bg-black bg-opacity-0 py-6 sm:py-6 md:py-8 px-0 sm:px-6 md:px-8 rounded-lg w-full mb-0;
 }
 
 .header-section-inner {
