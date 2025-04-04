@@ -33,7 +33,7 @@
               <!-- <img src="path-to-your-image.jpg" alt="Description" class="your-classes" /> -->
               <div id="headerRightCell">
                 <!-- lil-gui panel is appended here from ThreeTerrain.vue -->
-                <p class="text-gray-300">GUI Panel Will Appear Below:</p>
+                <p class="text-gray-300">Select a DEM Below:</p>
               </div>
             </div>
           </div>
