@@ -3,7 +3,7 @@
     <div class="container mx-auto flex items-center justify-between">
       <!-- Logo / Site Title -->
       <div class="text-white text-xl font-exo">
-        <NuxtLink to="/">Air Actual</NuxtLink>
+        <NuxtLink to="/" class="text-white font-bold tracking-wide hover:text-blue-400">Air Actual</NuxtLink>
       </div>
 
       <!-- Desktop Menu -->

@@ -18,10 +18,10 @@
     </div>
 
     <div class="bg-black xl:flex xl:h-[80vh]">
-      <div class="xl:w-1/2 flex flex-col justify-center px-4 pt-32 pb-20 xl:pt-0">
+      <div class="xl:w-1/2 flex flex-col justify-center px-6 pt-24 pb-20 xl:pt-0">
         <div class="max-w-lg mx-auto">
           <h1>
-            <em>Elevate your view with drone & GIS services</em>
+            Elevate your view with drone & GIS services
           </h1>
           <p>
             High-resolution aerial imagery and precise 

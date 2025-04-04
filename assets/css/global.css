@@ -28,6 +28,11 @@ body {
   font-family: 'Mona Sans', sans-serif;
 }
 
+/* Apply Mona Sans to all links */
+a, .router-link {
+  font-family: 'Mona Sans', sans-serif;
+}
+
 /* New utility class for Mona Sans (if needed for specific overrides) */
 .font-mona {
   font-family: 'Mona Sans', sans-serif;
